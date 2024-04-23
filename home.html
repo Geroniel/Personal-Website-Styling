@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        @keyframes float {
+          0% { transform: translateY(0px); }
+          50% { transform: translateY(-20px); }
+          100% { transform: translateY(0px); }
+        }
+        
+        .float {
+          animation: float 2s ease-in-out infinite;
+          color: red; 
+          font-size: 30px; 
+        }
+
+        body {
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="float">Geroniel Garcia Decano</h1>
+
+    <header>
+        <h1 class="main-heading">Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+    
+    
+    <main>
+
+        <section>
+            <h2 class="sub-heading">Get in Touch</h2>
+            <form action="/submit_form" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section>
+            <h3 class="sub-heading">About Me</h3>
+            <img src="gero.jpg" alt="A picture of me" width="300" height="200">
+            <p class="about-paragraph">Hello! My name is Geroniel Garcia Decano,I'm a dedicated professional with over seven years of experience in various administrative roles. In my previous role at HealthBay Polyclinic in Dubai, UAE, I handled a variety of tasks including billing, filing, and receptionist duties. I'm adept at managing multiple tasks simultaneously and have a keen eye for detail, which ensures accuracy in my work.
+                I take pride in my strong administrative skills and my commitment to excellence. I bring a strong work ethic, a dedication to customer service, and a team-oriented mindset to everything I do. I'm always eager to learn and grow, and I look forward to new opportunities to further develop my skills and experiences. Thank you for taking the time to learn more about me!.</p>
+        </section>
+
+        <section>
+            <h4 class="sub-heading">My Interests</h4>
+            <p class="about-paragraph">I have a wide range of interests that span across various fields. In the realm of technology, I'm particularly interested in web development, programming, and AI. I enjoy the process of building websites from scratch and the problem-solving aspect of programming. The potential of AI and its applications in improving our lives fascinates me.</p>
+            <p class="about-paragraph">Beyond technology, I have a love for outdoor activities. Hiking and exploring nature trails offer a great way for me to unwind. I also enjoy reading books across different genres, with a special interest in science fiction and historical novels. Music is another passion of mine, and I love discovering new artists and genres.</p>
+            <p class="about-paragraph">Additionally, I'm always open to learning new things and expanding my horizons. I believe that life is a continuous learning journey, and I strive to learn something new every day.</p>
+        </section>
+
+        <section>
+            <h5 class="sub-heading">Follow Me</h5>
+            <p>Check out my <a href="https://www.facebook.com/geroniel.decano/" target="_blank">Facebook page</a>!</p>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>© 2024 My Website</p>
+    </footer>
+</body>
+</html>
